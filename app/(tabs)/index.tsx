@@ -3,7 +3,7 @@ import { ThemeViewCustom } from "@/src/components/ThemeViewCustom";
 import { ThemedView } from "@/src/components/ThemedView";
 import { useFonts } from "expo-font";
 
-import { HomeStyles } from "@/src/assets/style/HomeStyle";
+import { HomeStyles } from "@/src/assets/styles/Home.Style";
 
 export default function HomeScreen() {
   const [fontsLoaded] = useFonts({

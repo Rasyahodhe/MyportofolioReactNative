@@ -3,7 +3,7 @@ import React from "react";
 
 import { TabBarIcon } from "@/src/components/navigation/TabBarIcon";
 import { Colors } from "@/src/constants/Colors";
-import { useColorScheme } from "@/src/hooks/useColorScheme";
+import { useColorScheme } from "@/src/utils/hooks/useColorScheme";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -58,6 +58,18 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "apps" : "apps-outline"}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="about"
+        options={{
+          title: "about",
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              name={focused ? "alert-circle" : "alert-circle-outline"}
               color={color}
             />
           ),

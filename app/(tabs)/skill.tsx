@@ -1,12 +1,12 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Image } from "react-native";
-import { styles } from "@/src/assets/style/SkillStyle";
+import { styles } from "@/src/assets/styles/Skill.Style";
 import ParallaxScrollView from "@/src/components/ParallaxScrollView";
 import { ThemedText } from "@/src/components/ThemedText";
 import { ThemedView } from "@/src/components/ThemedView";
 
 // My data
-import data from "@/src/components/data/mydata";
+import data from "@/src/api/helpers/mydata";
 
 export default function TabTwoScreen() {
   const findskill = data.find((item) => item.type === "skill");
@@ -25,7 +25,7 @@ export default function TabTwoScreen() {
           </ThemedView>
           <ThemedView>
             <ThemedText style={styles.containerHeadtitle} type="title">
-              Skill
+              Tech Stack & Tools
             </ThemedText>
           </ThemedView>
         </ThemedView>

@@ -1,10 +1,10 @@
 import { Image, Linking, TouchableOpacity } from "react-native";
-import { styles } from "@/src/assets/style/PortofolioStyle";
+import { styles } from "@/src/assets/styles/Portofolio.Style";
 import ParallaxScrollView from "@/src/components/ParallaxScrollView";
 import { ThemedText } from "@/src/components/ThemedText";
 import { ThemedView } from "@/src/components/ThemedView";
 
-import data from "@/src/components/data/mydata";
+import data from "@/src/api/helpers/mydata";
 
 interface ImgPortoType {
   id: number;
@@ -32,7 +32,7 @@ export default function HomeScreen() {
             />
           </ThemedView>
           <ThemedText type="title" style={styles.textTittle}>
-            PORTOFOLIO
+            Portofolio
           </ThemedText>
         </ThemedView>
       }

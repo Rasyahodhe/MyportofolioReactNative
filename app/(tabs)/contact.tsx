@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ContactStyle } from "@/src/assets/style/ContactStyle";
+import { ContactStyle } from "@/src/assets/styles/Contact.Style";
 import {
   KeyboardAvoidingView,
   TouchableOpacity,
@@ -9,7 +9,7 @@ import {
   Platform,
 } from "react-native";
 import { ThemedView } from "@/src/components/ThemedView";
-import data from "@/src/components/data/mydata";
+import data from "@/src/api/helpers/mydata";
 import { ThemedText } from "@/src/components/ThemedText";
 
 export default function Contact() {
