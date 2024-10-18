@@ -1,13 +1,7 @@
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedView } from "@/src/components/ThemedView";
 
 const AboutPages = () => {
-
-
-    return (
-        <ThemedView>
-            
-        </ThemedView>
-    )
+  return <ThemedView></ThemedView>;
 };
 
 export default AboutPages;

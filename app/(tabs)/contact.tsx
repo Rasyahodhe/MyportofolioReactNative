@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ContactStyle } from "@/style/ContactStyle";
+import { ContactStyle } from "@/src/assets/style/ContactStyle";
 import {
   KeyboardAvoidingView,
   TouchableOpacity,
@@ -8,9 +8,9 @@ import {
   TextInput,
   Platform,
 } from "react-native";
-import { ThemedView } from "@/components/ThemedView";
-import data from "@/components/data/mydata";
-import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@/src/components/ThemedView";
+import data from "@/src/components/data/mydata";
+import { ThemedText } from "@/src/components/ThemedText";
 
 export default function Contact() {
   const [name, setName] = useState("");

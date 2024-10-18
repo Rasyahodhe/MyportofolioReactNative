@@ -1,21 +1,13 @@
-import {
-  StyleSheet,
-  Text,
-  Button,
-  Linking,
-  View,
-  ActivityIndicator,
-} from "react-native";
-import { ThemeViewCustom } from "@/components/ThemeViewCustom";
-import { ThemedView } from "@/components/ThemedView";
+import { Text, Button, Linking, ActivityIndicator } from "react-native";
+import { ThemeViewCustom } from "@/src/components/ThemeViewCustom";
+import { ThemedView } from "@/src/components/ThemedView";
 import { useFonts } from "expo-font";
 
-import { HomeStyles } from "@/style/HomeStyle";
-import { HelloWave } from "@/components/HelloWave";
+import { HomeStyles } from "@/src/assets/style/HomeStyle";
 
 export default function HomeScreen() {
   const [fontsLoaded] = useFonts({
-    jetBrains: require("@/assets/fonts/JetBrainsMono-Bold.ttf"),
+    jetBrains: require("@/src/assets/fonts/JetBrainsMono-Bold.ttf"),
   });
 
   const handlerPress = async () => {
@@ -40,7 +32,7 @@ export default function HomeScreen() {
 
   return (
     <ThemeViewCustom
-      backgroundCustom={require("@/assets/images/background.webp")}
+      backgroundCustom={require("@/src/assets/images/background.webp")}
       style={HomeStyles.container}
     >
       <ThemedView style={HomeStyles.containerTittle}>

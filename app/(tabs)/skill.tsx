@@ -1,12 +1,12 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Image } from "react-native";
-import { styles } from "@/style/SkillStyle";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { styles } from "@/src/assets/style/SkillStyle";
+import ParallaxScrollView from "@/src/components/ParallaxScrollView";
+import { ThemedText } from "@/src/components/ThemedText";
+import { ThemedView } from "@/src/components/ThemedView";
 
 // My data
-import data from "@/components/data/mydata";
+import data from "@/src/components/data/mydata";
 
 export default function TabTwoScreen() {
   const findskill = data.find((item) => item.type === "skill");
@@ -20,7 +20,7 @@ export default function TabTwoScreen() {
           <ThemedView style={styles.containerHeadimg}>
             <Image
               style={styles.imglogo}
-              source={require("@/assets/images/icon/skill.png")}
+              source={require("@/src/assets/images/icon/skill.png")}
             ></Image>
           </ThemedView>
           <ThemedView>
